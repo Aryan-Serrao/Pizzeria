@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Pizzeria!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="pizzeria.css">
+        <script src="pizzeria.js"></script>
+        <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/food-beverages-7/64/pizza-round-512.png">
+    </head>
+
+    <body class="img-responsive">
+
+        <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999;">
+        
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar-Time!">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#"><b><b>Pizzeria</b></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="Navbar-Time!">
+
+                <ul class="nav navbar-nav">
+                    <a href="#"><li class="twins"><b>View Menu</b></li></a>
+                    <a href="#add-time"><li class="twins"><b>Add Menu</b></li></a>
+                </ul>
+
+            </div>
+        
+        </nav>
+
+        <div class="page">
+
+            <div class="row" id="view-area">
+                <div class="img-div">
+                    <img src="Images.pizzeria/Pizza.png" class="img-responsive">
+                </div>
+                <div class="menu_div" id="menu-div">
+                    <button type="button" class="btn btn-danger" width="250px" onclick="view_menu ()"><h3>View Menu</h3></button>
+                    <h3 id="menu"></h3>
+                </div>
+            </div>
+
+            <div class="row" id="add-time">
+                <div class="en-create" style="margin-left:20px;">
+
+                    <h4 class="info">*Note, Do Not Enter 'Pizza' Below*</h4>
+
+                    <input type="text" placeholder="Enter Your Toppings?" id="toppings"><br><br><br>
+
+                    <button type="button" onclick="create ()" class="btn btn-warning" style="margin-left:15px;font-size:medium;">Order A New Pizza!</button>
+
+                </div>
+
+                <div id="added_menu">
+                    
+                </div>
+            </div>
+
+            <div class="img-div" id="sh">
+                    <img src="Images.pizzeria/Toppings.png" class="img-responsive" style="margin-left:350px;">
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
